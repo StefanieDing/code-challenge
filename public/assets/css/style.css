@@ -41,7 +41,6 @@ nav{
 }
 
 h2{
-  width: 650px;
   margin-top: 40px;
   font-weight: lighter;
 }
@@ -64,10 +63,69 @@ h2{
 
 /*Content*/
 
+.gray-block{
+  background-color: #d0d0d0;
+  height: 418px;
+  color: black;
+}
+
+.quote{
+  margin: 50px;
+}
+
+.smalltitle{
+  font-weight: lighter;
+  color: black;
+  padding-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+.smalltitle:before{
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  bottom: 0;
+  left: 10%;
+  border-bottom: 2px solid #4bb1b7;
+}
+
+img{
+  object-fit: cover;
+}
+
+.container{
+  text-align: center;
+  padding: 80px 40px;
+}
+
+div.col.s12.clear{
+  padding: 0px;
+  margin: 0px;
+  height: 400px;
+}
+
+.banner1{
+  height: 400px;
+  width: 100%;
+}
+
+.banner2{
+  height: 360px;
+  width: 100%;
+}
+
+.row, div.row.gray-block, img, div.row{
+  margin: 0;
+}
 
 /*Footer*/
 body footer{
   color:white;
+}
+
+footer img{
+  margin-top: 60px;
 }
 
 footer.page-footer{
@@ -76,25 +134,21 @@ footer.page-footer{
   margin-top: 0;
 }
 
-.container.center-align{
-  margin-bottom: 0px;
-}
-
 .row.info{
   border-top: 2px solid #c6c8c8;
-  padding-top: 20px;
-  margin-top: 200px;
+  padding: 20px 0px 120px;
+  margin-top: 140px;
 }
 
 .row{
   margin-bottom: 125px;
 }
 
-h2{
+footer h2{
   margin: 0;
   width: 100%;
 }
 
-img{
+footer img{
   width: 800px;
 }
