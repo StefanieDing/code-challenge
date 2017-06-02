@@ -1,0 +1,53 @@
+/*All*/
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 36px;
+}
+h3{
+  font-size: 33px;
+}
+h4{
+  font-size: 18px;
+}
+h5{
+  font-size: 17px;
+}
+h6{
+  font-size: 16px;
+}
+
+/*Navbar*/
+nav{
+  background-color: #4bb1b7;
+  margin-top: 0;
+  height: 553px;
+  width: 100%;
+}
+
+.title{
+  margin-top: 150px;
+}
+
+h2{
+  width: 650px;
+  margin-top: 40px;
+  font-weight: lighter;
+}
+
+.col.s3.left{
+  margin: 40px 20px; 
+  width: 300px;
+}
+
+#circle{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background: white;
+}
+
+.material-icons{
+  font-size: 75px;
+}

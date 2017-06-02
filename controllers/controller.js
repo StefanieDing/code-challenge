@@ -6,3 +6,9 @@ Category.sync();
 
 var List = require('../models')['List'];
 List.sync();
+
+router.get('/', function(req, res){
+  res.render('index');
+});
+
+module.exports = router;
