@@ -1,0 +1,16 @@
+{{#each list}}
+  <div class="list-itm col s12" id={{this.id}}>
+    <div class="col s4">
+      <i class="fa fa-{{this.icon}}"></i>
+      <h4><b>{{this.title}}</b></h4>
+    </div>
+
+    <div class="col s4">
+      <h4>{{this.description}}</h4>
+    </div>
+
+    <div class="col s4">
+    <h4>{{this.type}}</h4>
+    </div>
+  </div>
+{{/each}}
