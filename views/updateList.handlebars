@@ -1,0 +1,54 @@
+<div class="row category-container">
+  {{#each list}}
+    <div class="col s12 list-style" id={{this.id}}>
+      <div class="col s1 center-align">
+        <i class="fa fa-4x fa-{{this.icon}}" aria-hidden="true"></i>
+      </div>
+
+      <div class="col s3">
+         <h4 class="list"><b>{{this.title}}</b></h4>
+      </div>
+
+      <div class="col s4 center-align">
+        <h4 class="list">{{this.description}}</h4>
+      </div>
+
+      <div class="col s3 center-align">
+      <h4 class="list">{{this.type}}</h4>
+      </div>
+
+      <div class="col s1">
+        <form action="delete-list/{{this.id}}?_method=DELETE" method="POST">
+          <button type="submit" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></button>
+        </form>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<div class="row category-container">
+  <h2>Add a List Item</h2>
+  <form action="/addList" method="POST">
+    <div class="row">
+        <div class="input-field col s4">
+          <h4>List Title</h4>
+          <input placeholder="Title" name="title" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <h4>Icon <a href="http://fontawesome.io/icons/" target="_blank">(Font Awesome)</a></h4>
+          <input placeholder="Icon" name="icon" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <h4>Type</h4>
+          <input placeholder="Type" name="type" type="text" class="validate">
+        </div>
+        <div class="input-field col s12">
+          <h4>Location</h4>
+          <input placeholder="Description" name="description" type="text" class="validate">
+        </div>
+    </div>
+    <br>
+    <button type="submit" class="waves-effect waves-light btn">SUBMIT</button>
+  </form>
+</div>
+
