@@ -28,5 +28,18 @@ router.get('/', function(req, res){
   });
 });
 
+router.get('/add-category', function(req,res){
+  Category.findAll({})
+    .then(function(data){
+      res.render('addCategory', { category: data });
+    });
+});
+
+router.get('/add-list', function(req,res){
+  List.findAll({})
+    .then(function(data){
+      res.render('addList', { list: data });
+    });
+});
 
 module.exports = router;
